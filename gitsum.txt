@@ -1,0 +1,108 @@
+BASH命令
+
+1
+pwd 
+打印当前目录
+
+2
+ls 列举当前目录所有耳朵文件文件夹
+
+3
+cd 进入下一级
+
+4
+进入子文件夹ccc
+方法一：
+ls ccc
+方法二：
+cd ccc
+
+5
+进入上一级
+方法一：
+ls ../
+ls ../ ../
+方法二：
+cd ../
+cd ../ ../
+
+6 
+显示隐藏
+ls -a
+
+7 
+新建文件夹app
+mkdir app
+
+新建文件1.html
+touch 1.html
+
+删除文件夹app
+app为空  rmdir app
+app不为空 rm -r app
+
+删除文件1.html
+rm 1.html或者rm 文件夹名/1.html
+
+8
+复制粘贴文件
+cp 源文件路径/源文件名 新文件路径/新文件名
+cp app/html/1.txt app5
+
+9
+剪贴粘贴文件
+mv 源文件路径/源文件名称 新文件路径/新文件名称
+mv 库/echarts.min.js .  (移动到桌面，新文件路径就是.)
+
+10
+查看文件内容
+cat ./1.txt
+
+11修改文件内容
+vi 源文件路径----i----esc----:wq
+
+*********************************************
+GIT
+
+1
+第一步：在工作区创建文件和文件夹，并上传到暂存区（本地提交）
+mkdir app
+cd app
+git init
+touch 1.html 1.js
+git add .
+git config --global user.name icegoggy
+git config --global user.email 875852822@qq.com
+git status
+git commit
+i
+第一次修改
+sec 
+:wq
+git log
+
+第二步：在github上创建一个库
+
+第三步：将本地代码上传到库
+复制github库的地址
+git push 粘贴地址 master
+
+2
+在家里
+下载
+git clone 地址 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
